@@ -3,6 +3,9 @@
 Ce projet propose une analyse exploratoire et interactive du taux de délinquance en France à partir de données publiques officielles.
 Il combine un pipeline de nettoyage documenté, un tableau de bord Streamlit et une exploration multi-échelle (région → commune).
 
+⚠️ **Note importante :** Le fichier `communes_clean.csv` (762 Mo) n’est pas inclus dans ce dépôt GitHub en raison de sa taille.  
+Il peut être téléchargé via le lien suivant : ().
+
 🎯 Objectifs du projet
 
 Analyser les dynamiques territoriales et temporelles de la délinquance en France
