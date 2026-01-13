@@ -1,0 +1,61 @@
+===========================================================
+PROJET SDA 2025 - ANALYSE DE LA DÉLINQUANCE EN FRANCE
+===========================================================
+
+👥 Binome :
+-----------
+- Constance KEITA (tinamarie@hotmail.fr)
+- Guillaume PATIENT (gpat171@gmail.com)
+
+🔗 ACCÈS AUX JEUX DE DONNÉES :
+-----------------------------
+1. Dataset utilisé par l'application (Version Clean) :
+👉 https://drive.google.com/file/d/1lp3C9mCyeXONvBaMhgrS1u4n9jlBEXRi/view?usp=sharing
+
+(Ce fichier "communes_clean.csv" inclut les 4,7M de lignes sources 
+enrichies avec nos 5 nouvelles variables. C'est le fichier requis 
+pour faire fonctionner le dashboard Streamlit.)
+
+⚠️ IMPORTANT : Installation des données Pour des raisons de taille, le jeu de données n'est pas inclus dans l'archive.
+
+Téléchargez le fichier communes_clean.csv via le lien Drive fourni.
+
+Placez le fichier téléchargé à l'intérieur : PROJET/Data/
+
+
+2. Source des données brutes (Version Raw) :
+👉 https://www.data.gouv.fr/fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/
+(Pour référence : données SSMSI avant notre travail de jointure et de calculs.)
+
+🚀 GUIDE DE LANCEMENT RAPIDE :
+-----------------------------
+L'environnement complet est géré via Conda (recommandé) ou Pip.
+Toutes les instructions détaillées se trouvent dans le fichier README.md.
+
+# Option A (Conda) :
+#1. conda env create -f environment.yml
+
+#2. conda activate datacom
+
+#3. streamlit run 02_streamlit/app.py
+
+# Option B : Via Pip (Standard)
+
+#1. python -m venv venv
+
+ source venv/bin/activate    # macOS / Linux
+ # ou
+ venv\Scripts\activate       # Windows
+
+#2. pip install -r requirements.txt
+
+#3. streamlit run 02_streamlit/app.py
+
+
+📌 NOTES SUR LE RENDU :
+----------------------
+- Le dossier /notebooks contient l'analyse exploratoire et le 
+  processus de transformation (Text Mining, Wordcloud).
+- Le dossier /streamlit contient l'application interactive.
+- Le dossier /Data doit contenir le CSV clean et le GeoJSON.
+===========================================================

@@ -1,0 +1,15 @@
+name: datacom
+channels:
+  - conda-forge
+channel_priority: strict
+dependencies:
+  - python=3.12
+  - streamlit
+  - pandas
+  - numpy
+  - pyarrow
+  - plotly
+  - pip
+  - pip:
+      # mets ici uniquement ce qui n'existe pas/peu fiable sur conda-forge
+      - altair
